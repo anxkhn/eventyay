@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#f56632" />
+    <meta
+      name="description"
+      content="A new look for Eventyay. Discover your people, make something happen, and manage your next event."
+    />
+    <title>Eventyay · Make room for more</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23f56632'/%3E%3Cpath d='M10 21l7 7 13-16' fill='none' stroke='white' stroke-width='5'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#discover" aria-label="Eventyay home"
+        ><svg viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="12" fill="currentColor" />
+          <path
+            d="M11 21l7 7 12-16"
+            stroke="white"
+            stroke-width="4"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          /></svg
+        >eventyay<span class="brand-dot">.</span></a
+      >
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="#discover">Discover</a><a href="#tickets">My tickets</a
+        ><a href="#dashboard">Organize</a>
+      </nav>
+      <div class="header-actions">
+        <button
+          class="icon-button"
+          id="motion-toggle"
+          aria-label="Pause animations"
+          aria-pressed="false"
+          title="Toggle animations"
+        >
+          Pause
+        </button>
+        <button
+          class="icon-button"
+          id="appearance"
+          aria-label="Open appearance settings"
+          title="Make it yours"
+        ></button
+        ><button class="button small dark" id="create-event">
+          Create an event <span aria-hidden="true">↗</span></button
+        ><button class="avatar" id="profile" aria-label="Open profile settings">
+          AK
+        </button>
+      </div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer>
+      <a class="brand" href="#discover">eventyay.</a>
+      <p>Good things happen when we get together.</p>
+      <div>
+        <a
+          href="https://github.com/fossasia/eventyay"
+          target="_blank"
+          rel="noopener"
+          >Open source by FOSSASIA ↗</a
+        ><span>Interactive redesign · Sample events</span>
+      </div>
+    </footer>
+    <dialog id="dialog" aria-labelledby="dialog-title">
+      <div id="dialog-content"></div>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
